@@ -1,0 +1,52 @@
+html {
+  margin-top: 30px;
+  margin-left: 50px;
+  border: 5px solid black;
+  width: 1080px;
+  height: 600px;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: cadetblue;
+}
+
+.snake-active {
+  position: absolute;
+  border-left: 20px solid green;
+  border-top: 20px solid green;
+}
+
+.dot-active {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid yellow;
+  border-top: 20px solid yellow;
+}
+
+.score {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 1100px;
+  margin-top: 0px;
+}
+
+.game-over {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 350px;
+  margin-top: 130px;
+}
+
+.start {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 350px;
+  margin-top: 170px;
+}
