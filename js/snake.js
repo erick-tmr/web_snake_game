@@ -97,6 +97,7 @@ var game = {
     snake.body = [{ x: 2, y: 0, moving: game.directions.right, lastMoved: game.directions.right}, { x: 1, y: 0}, { x: 0, y: 0}];
     snake.speed = 8;
     game.score = 0;
+    dot.create();
   }
 };
 
@@ -188,7 +189,9 @@ var snake = {
       x: snake.body[snake.body.length - 1].x,
       y: snake.body[snake.body.length - 1].y
     });
-    snake.speed++;
+    if(snake.speed <= 25){
+      snake.speed += 0.5; 
+    }
   }
 };
 
